@@ -1,0 +1,97 @@
+.geostation-modal {
+  &__wrap {
+    position: relative;
+  }
+  &__list_item, &__auto {
+    cursor: pointer;
+    color: $secondary-1;
+    &:hover {
+      color: #07c !important;
+    }
+  }
+  &__top {
+    margin-top: -9px;
+  }
+  &__place {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+    &-city {
+      margin-top: 2px;
+      font-size: 1.5rem;
+    }
+    &-marker {
+      font-size: 1.3rem;
+    }
+  }
+  &__search {
+    position: relative;
+    &_btn {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -11px;
+      font-size: 16px;
+      background: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__list-mobile {
+    display: none;
+  }
+  &__alert {
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    top: 2.85rem;
+    display: none;
+    &_city {
+      font-size: 1.2rem;
+    }
+    &_btns-btn {
+      width: 95px;
+      height: 2.3em;
+      line-height: 1em;
+      padding: 0;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -9px;
+      width: 20px;
+      height: 20px;
+      transform: translateX(-50%) rotate(45deg);
+      background: #fff;
+      border: 1px solid $secondary-5;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -8px;
+      width: 20px;
+      height: 20px;
+      transform: translateX(-50%) rotate(45deg);
+      background: #fff;
+    }
+  }
+  &__footer-btn {
+    width: 100%;
+  }
+}
+
+ @include media-breakpoint-down(xs) {
+   .geostation-modal__top {
+      margin-top: 10px;
+      text-align: center;
+   }
+   .geostation-modal__auto {
+    text-align: center;
+   }
+ }
+
+

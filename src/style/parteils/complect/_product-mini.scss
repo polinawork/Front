@@ -1,0 +1,122 @@
+@include media-breakpoint-up(xs) {
+  .product-mini {
+    position: relative;
+    width: 160px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &-row {
+      margin-left: -8px;
+      margin-right: -8px;
+
+      &.accordion-item__slider {
+        .product-mini {
+          margin: 0;
+          width: 160px;
+        }
+      }
+    }
+
+    &-collection {
+      opacity: 0.5;
+      width: calc((100%/3) - 16px);
+      margin: 0 8px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &__pic {
+      position: relative;
+      // width: 160px;
+      &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+
+      img {
+        transition: 0.3s;
+        transform: scale(0.8);
+      }
+    }
+
+    &--active {
+      opacity: 1;
+
+      .product-mini {
+        &__pic {
+          img {
+            transform: scale(1);
+          }
+        }
+
+        &__check {
+          display: block;
+        }
+      }
+    }
+
+    &__pic {
+      height: 160px;
+
+      img {}
+    }
+
+    &__check {
+      display: none;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 50;
+
+      i {
+        color: $warning;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .product-mini {
+    &-collection {
+      width: calc((100%/4) - 16px);
+    }
+    &-row {
+      &.accordion-item__slider {
+        .product-mini-collection {
+          width: calc((100%/4) - 16px);
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .product-mini {
+    &-collection {
+      width: calc((100%/3) - 16px);
+    }
+    &-row {
+      &.accordion-item__slider {
+        .product-mini-collection {
+          width: calc((100%/3) - 16px);
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .product-mini {
+    &-collection {
+      width: calc((100%/6) - 16px);
+    }
+    &-row {
+      &.accordion-item__slider {
+        .product-mini-collection {
+          width: calc((100%/6) - 16px);
+        }
+      }
+    }
+  }
+}

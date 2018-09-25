@@ -1,0 +1,64 @@
+
+.product-slider__wrap {
+	position: relative;
+}
+
+.product-slider {
+	.product__link:focus {
+		outline: none;
+	}
+	& .slick-slide:focus {
+		outline: none;
+	}
+	& .slick-list {
+		padding: 20px 11px;
+	}
+	& .product {
+		margin: 0 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	&__overlay {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background: #fff;
+		width: 120px;
+		z-index: 12;
+		&_left {
+			left: 0;
+			background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1));
+		}
+		&_right {
+			right: 0;
+			background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+		}
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		margin-top: -14px;
+		z-index: 13;
+		opacity: 0.5;
+		cursor: pointer;
+		transition: 0.3s ease;
+		&_prev {
+			transform: rotate(180deg);
+			left: 30px;
+		}
+		&_next {
+			right: 30px;
+		}
+		&:hover {
+			opacity: 1;
+			transition: 0.3s ease;
+		}
+	}
+	&-left {
+		display: none;
+	}
+}
+
+.big-set__slider .slcik-list {
+	padding: 20px 0;
+}

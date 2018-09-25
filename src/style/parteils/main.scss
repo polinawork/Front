@@ -1,0 +1,643 @@
+
+/* Icon Font */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "parteils/mo-font/_mo-font";
+
+/* Цвета */
+$theme-colors: (
+  "primary": #1e91d3,
+  "cyan": #07c,
+  "info": #36AAEC,
+
+  "secondary-1": #333,
+  "secondary-2": #666,
+  "secondary-3": #999,
+  "secondary-4": #ccc,
+  "secondary-5": #eaeaea,
+  "secondary-6": #f7f7f7,
+
+  "danger": #ff1436,
+  "success":#14af69,
+  "warning":#f90,
+  "warning-2":#F68200,
+  "warning-3":#e75d00,
+  "warning-4":#d73700,
+  "warning-5":#c60d00,
+
+  "white":#fff,
+);
+
+$body-bg: #fff;
+$body-color: #333;
+
+$secondary-1: #333;
+$secondary-2: #666;
+$secondary-3: #999;
+$secondary-4: #ccc;
+$secondary-5: #eaeaea;
+$secondary-6: #f7f7f7;
+
+$success: #14af69;
+$danger: #ff1436;
+$warning: #f90;
+$blue: #1e91d3;
+$info: #36AAEC;
+$cyan: #07c;
+$hov: #0492f7;
+$icolight: #bde7ff;
+$white: #fff;
+$bgcolor: #0061a6;
+
+$border-radius: 0.185rem;
+
+/* Типографика */
+
+$font-size-base: 0.875rem;
+
+$h1-font-size: $font-size-base * 2.15;
+$h2-font-size: $font-size-base * 1.71;
+$h3-font-size: $font-size-base * 1.28;
+$h4-font-size: $font-size-base * 1.15;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base * .86;
+
+$headings-font-weight: 400;
+
+h1 {
+  font-weight: 700 !important;
+}
+
+
+$font-family-sans-serif: "Roboto", sans-serif;
+
+$paragraph-margin-bottom: 0;
+
+/* Инпуты */
+
+$input-btn-padding-y: .65rem;
+$input-btn-padding-x: 1rem;
+
+$input-btn-focus-width:  0;
+$input-btn-focus-color: $warning;
+$input-btn-focus-box-shadow: 0;
+
+//$input-btn-padding-y-sm:      .25rem !default;
+//$input-btn-padding-x-sm:      .5rem !default;
+//$input-btn-line-height-sm:    $line-height-sm !default;
+
+//$input-btn-padding-y-lg:      .5rem !default;
+//$input-btn-padding-x-lg:      1rem !default;
+//$input-btn-line-height-lg:    $line-height-lg !default;
+
+$input-btn-border-width: 1px;
+
+$input-color: $secondary-1;
+$input-border-color: $secondary-5;
+$input-box-shadow: none;
+
+$input-focus-border-color: $warning;
+$input-placeholder-color: $secondary-3;
+
+$input-transition: 0.3s ease;
+
+/* Хлебные крошки */
+
+$breadcrumb-margin-bottom: 1rem;
+
+$breadcrumb-padding-y: 1rem !default;
+$breadcrumb-padding-x: 0 !default;
+
+$breadcrumb-bg: inherit;
+$breadcrumb-divider-color: $secondary-3;
+$breadcrumb-active-color: $secondary-1;
+$breadcrumb-divider: quote("•");
+
+$breadcrumb-border-radius: 0px;
+
+/* Ссылки */
+
+$link-color: $cyan;
+//$link-decoration: none !default;
+$link-hover-color: $hov;
+$link-hover-decoration: none;
+
+a {
+  transition: 0.3s ease;
+  &:hover {
+    transition: 0.3s ease;
+  }
+}
+
+.link-decoration {
+  color: #333;
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+
+/* Кнопки */
+
+$btn-padding-y: .44rem;
+$btn-padding-x: 1.45rem;
+
+$progress-height: .6rem;
+
+$btn-transition: 0.3s ease;
+
+/* Формы */
+
+$custom-file-button-color: $secondary-1;
+$custom-file-button-bg: $secondary-6;
+
+$custom-file-text: (
+  en: "Browse",
+  ru: "Выбрать"
+) !default;
+
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+
+$custom-checkbox-indicator-border-radius:       $border-radius !default;
+$custom-checkbox-indicator-icon-checked: none;
+$custom-checkbox-indicator-indeterminate-bg: $warning;
+$custom-checkbox-indicator-indeterminate-color:  $warning;
+
+.btn-eye {
+  color: $secondary-4;
+  background: none;
+  border: none;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1.1em;
+  height: 3.6em;
+  font-size: 0.75rem;
+  line-height: 4em;
+  &:hover {
+    transition: 0.3s ease;
+    color: $secondary-1;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Табы */
+
+$nav-tabs-link-active-color:  $secondary-1;
+
+/* Модальные окна */
+
+
+$modal-backdrop-bg:  $secondary-1;
+$modal-backdrop-opacity: .6;
+
+$modal-content-border-color: $secondary-2;
+$modal-content-border-width: 0;
+
+
+/* Сетка */
+
+$grid-gutter-width: 1.25em;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 540px,
+  md: 768px,
+  lg: 1050px,
+  xl: 1366px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1000px,
+  xl: 1346px,
+);
+
+/* Pagnination */
+$pagination-padding-y:              .5rem !default;
+$pagination-padding-x:              .75rem !default;
+$pagination-padding-y-sm:           .25rem !default;
+$pagination-padding-x-sm:           .5rem !default;
+$pagination-padding-y-lg:           .75rem !default;
+$pagination-padding-x-lg:           1.5rem !default;
+$pagination-line-height:            1.25 !default;
+
+$pagination-color:          $cyan;
+$pagination-bg:                     $white;
+$pagination-border-color:           $cyan;
+
+$pagination-focus-box-shadow:       0;
+$pagination-focus-outline:          0;
+
+$pagination-hover-color:            $white;
+$pagination-hover-bg:               $cyan;
+$pagination-hover-border-color:     $cyan;
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              $cyan;
+$pagination-active-border-color:    $cyan;
+
+$pagination-disabled-color:         $secondary-3;
+$pagination-disabled-bg:            $secondary-6;
+$pagination-disabled-border-color:  $secondary-4;
+
+/* Dropdowns */
+$dropdown-padding-y:        0;
+$dropdown-bg:                       $secondary-6;
+$dropdown-border-color:       $secondary-6;
+$dropdown-border-radius:            3px;
+$dropdown-divider-bg:               red;
+$dropdown-box-shadow:               0;
+
+$dropdown-link-color:               #333;
+$dropdown-link-hover-color:         #333;
+$dropdown-link-hover-bg:            #ccc;
+
+$dropdown-link-active-color:        #333;
+$dropdown-link-active-bg:           #ccc;
+
+$dropdown-link-disabled-color:      $secondary-3;
+$dropdown-min-width:                70px;
+
+/* Spacers */
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: ($spacer * .75),
+    4: $spacer,
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.75),
+    7: ($spacer * 2.5),
+    8: ($spacer * 3),
+    9: ($spacer * 3.75)
+  ),
+  $spacers
+);
+/*
+* Bootstrap
+*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*
+* Slick slider
+*/
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+/*
+* Fancybox
+*/
+@import "../../node_modules/fancybox/dist/scss/jquery.fancybox.scss";
+
+/*
+* Header
+*/
+
+@import "parteils/_header";
+
+/*
+* Footer
+*/
+
+@import "parteils/_footer";
+
+
+
+p{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.btn {
+  font-size: 1rem;
+}
+
+.mm-page {
+  padding-top: 2.85em;
+}
+
+.nav-tabs{
+  border: 0;
+  .nav-link{
+    border: 0;
+    transition: none;
+    &:hover{
+      border: 0;
+    }
+    &.active{
+      background: inherit;
+      border: 0;
+      border-bottom: 3px solid $warning;
+    }
+  }
+}
+
+/*.nav-link {
+  color: $secondary-3;
+  transition: 0.3s ease;
+  &:hover {
+    color: $secondary-1;
+    transition: 0.3s ease;
+    border-bottom: 3px solid $warning;
+  }
+}*/
+
+
+.btn-rounded{
+  border-radius: 1000rem;
+}
+
+.navigate{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+.breadcrumb{
+  margin: 0;
+}
+
+.display-5 {
+  font-size: 3rem;
+}
+.display-6 {
+  font-size: 2.5rem;
+}
+.display-7{
+  font-size: 2rem;
+}
+.display-8{
+  font-size: 1.5rem;
+}
+
+.manufactures__item_mini-category{
+    content: '';
+    position: absolute;
+    margin: -2em 5%;
+    width: 90%;
+    left: 0;
+    z-index: 1;
+}
+
+/* Пагинация */
+
+.page-link {
+  color: $pagination-disabled-color;
+  background-color: $pagination-disabled-bg;
+  border-color: $pagination-disabled-border-color;
+}
+
+.page-item {
+  &:first-child {
+    .page-link {
+      color: $pagination-color;
+      background-color: $pagination-bg;
+      border-color: $pagination-border-color;
+      margin-right: 0.75em;
+
+      &:hover {
+        color: $pagination-hover-color;
+        background-color: $pagination-hover-bg;
+        border-color: $pagination-hover-border-color;
+      }
+    }
+  }
+  &:last-child {
+    .page-link {
+      color: $pagination-color;
+      background-color: $pagination-bg;
+      border-color: $pagination-border-color;
+      margin-left: 0.75em;
+
+      &:hover {
+        color: $pagination-hover-color;
+        background-color: $pagination-hover-bg;
+        border-color: $pagination-hover-border-color;
+      }
+    }
+  }
+  &:nth-child(2){
+    .page-link {
+      @include border-left-radius($border-radius);
+    }
+  }
+  &:nth-last-child(2){
+    .page-link {
+      @include border-right-radius($border-radius);
+    }
+  }
+}
+
+
+/* Дропдаун */
+
+@mixin caret2($direction: down) {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: $dropdown-item-padding-x;
+    width: 12px;
+    height: 6px;
+    transition: .3s;
+    transform: translateY(-50%);
+    background: url(../img/btn-arrow.svg) no-repeat;
+  }
+}
+// The dropdown menu
+.dropdown-menu {
+  margin: 0; // override default ul
+  border-radius: 0;
+  border: 0;
+  transform: translate3d(0px, 29px, 0px) !important;
+  width: 100%; 
+}
+
+.dropdown-toggle {
+  background-color: $dropdown-bg;
+  border-color: $dropdown-bg;  
+  min-width: $dropdown-min-width;
+  padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+  color: $body-color;
+  border: 0;
+  text-align: left;
+  position: relative;
+  width: 100%;
+
+  &:hover, &:active{
+    background-color: $dropdown-bg;
+    color: $dropdown-link-color;
+    border-color: $dropdown-bg; 
+  } 
+}
+
+.dropdown-toggle::after {
+  // Generate the caret automatically
+  //@include caret;
+  display: none;
+}
+.dropdown-toggle{
+  @include caret2;
+}
+
+.dropdown:hover > .dropdown-menu { 
+    display: block; 
+    top: 0;
+} 
+
+.dropdown:hover .dropdown-toggle::before{
+  transform: rotate(180deg);
+}
+
+a.text-secondary-3 {
+  transition: 0.3s ease;
+  &:hover {
+    color: #333 !important;
+    transition: 0.3s ease;
+  }
+}
+
+
+.btn-warning {
+  color: #fff;
+}
+
+@import "parteils/_modal";
+
+button {
+  cursor: pointer;
+}
+
+address, dl, ol, pre, ul {
+  margin-bottom: 0;
+}
+
+
+button.secondary-3 {
+  transition: 0.3s ease;
+  &:hover {
+    transition: 0.3s ease;
+    color: #333 !important;
+  }
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.link-active {
+  color: #07c !important;
+  &:hover {
+    color: #07c !important;
+    cursor: default;
+  }
+}
+
+/* Delete Search */
+
+.delete-search {
+  height: 100%;
+  top: 0;
+  right: 3em;
+  line-height: 1em;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.invalid-feedback, .valid-feedback {
+  font-size: 79%;
+}
+
+.invalid-feedback {
+  text-align: left;
+}
+
+.valid-feedback {
+  text-align: left;
+}
+
+/*--------------------------------------*/
+
+.label-green{
+  background-color: #14AF69;
+  color: #fff;
+  border-radius: 3px 0 3px 0;
+  padding: 0.5rem 1.19rem;
+}
+
+.text-line-through{
+  text-decoration: line-through;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+
+.full-height{
+  min-height: calc(100vh - 40px);
+  @include media-breakpoint-down(md){
+    height: auto;
+    min-height: calc(100vh - 40px);
+  }
+}
+
+/*----------------------------------------*/
+
+/* Order Page */
+
+@import "parteils/_order";
+
+/* Card Page */
+
+@import "parteils/_card";
+
+/* Card Page */
+
+@import "parteils/_complect";
+
+/* Thanks Page */
+
+@import "parteils/_thanks-page";
+
+/* Thanks Page */
+
+@import "parteils/_product";
+
+@import "parteils/_product-slider";
+
+@import "parteils/_recommendation";
+
+@import "parteils/_modal";
+
+@import "parteils/_product-sidebar";
+
+.review-block__stars {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+}

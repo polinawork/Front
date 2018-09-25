@@ -1,0 +1,123 @@
+
+.review {
+	&__img {
+		width: auto;
+		height: auto;
+		margin: auto;
+		&-wrap {
+			width: 50px;
+			height: 50px;
+			overflow: hidden;
+		}
+	}
+	&__info {
+		&_name {
+			margin-bottom: 8px;
+		}
+		&_date {
+			margin-left: 16px;
+			@include media-breakpoint-down(xs) {
+				margin-left: 0;
+			}
+		}
+		&_date-user {
+			@include media-breakpoint-down(xs) {
+				margin-left: 98px;
+			}
+		}
+		&_stars {
+			position: relative;
+			@include media-breakpoint-down(xs) {
+				position: absolute;
+				top: 26px;
+			}
+			&-star {
+				font-size: 14px;
+				margin-right: 3px;
+			}
+		}
+	}
+	&-body {
+		&__text {
+			line-height: 1.78em;
+		}
+	}
+
+	&-bottom {
+		&__with-btn {
+			height: auto;
+			@include media-breakpoint-down(xs) {
+				height: 65px;
+			}
+		}
+		&__btn {
+			width: 20px;
+			height: 20px;
+			&-dislike_ico, &-like_ico {
+				left: 8px;
+				font-size: 1.28rem;
+			}
+			&-like_ico {
+				top: -3px;
+			}
+			&-dislike_ico {
+				top: 5px;
+			}
+		}
+	}
+
+	&-answer {
+		&__btn {
+			
+			position: absolute;
+			padding: 0;
+			bottom: 0;
+			left: auto;
+			right: 0;
+			border: none;
+			@include media-breakpoint-down(xs) {
+				left: 0;
+			}
+			&_ico {
+				top: 14px;
+			    right: 0px;
+			    font-size: 12px;
+			}
+		}
+
+	}
+
+}
+
+.rating {
+	&__total {
+		&_num {
+			font-size: 1rem;
+		}
+		&_ico {
+			font-size: 1rem;
+		}
+	}
+	&__rate {
+		&_row {
+			&-bar {
+				height: 5px;
+				&-progress {
+					height: 5px;
+					background: red;
+					border-top-left-radius: $border-radius;
+					border-bottom-left-radius: $border-radius;
+				}
+			}
+			&-total {
+				font-size: 0.7rem;
+				width: 20px;
+			}
+		}
+	}
+	&__wrap {
+		&_num {
+			font-size: 1rem;
+		}
+	}
+}

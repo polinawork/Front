@@ -1,0 +1,49 @@
+
+.characterisrics {
+	&__table {
+		width: 100%;
+		text-align: center;
+		border: 1px solid #eaeaea;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		border-spacing: 0;
+		border-collapse: separate;
+		&_hat {
+			background: #eaeaea;
+			padding: 7px 0;
+			&:last-child {
+				border-top-right-radius: 3px;
+			}
+			&:first-child {
+				border-top-left-radius: 3px;
+			}
+		}
+		&_row {
+			padding: 15px 0;
+			&:nth-child(odd) td {
+				background: #f7f7f7;
+			}
+			&-value {
+				padding: 10px 0;
+			}
+		}
+		&-in {
+			text-align: left;
+			& td, & th {
+				padding-right: 20px;
+				padding-left: 20px;
+			}
+		}
+		&-big {
+			border: none;
+			text-align: left;
+			margin-bottom: 30px;
+			& td {
+				width: 50%;
+				padding-right: 20px;
+				padding-left: 20px;
+				border-radius: 3px;
+			}
+		}
+	}
+}

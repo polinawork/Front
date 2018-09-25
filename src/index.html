@@ -1,0 +1,613 @@
+//= template/header.html
+<style media="screen">
+  code{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f7f7f7;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    color: #333;
+  }
+</style>
+
+
+
+<section class="pt-4">
+  <div class="container">
+    <h1>Гайдлайн по верстке</h1>
+  </div>
+  <div class="container">
+    <h2>Заголовки</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <code>
+          <h1>Заголовок h1</h1>
+          <h2>Заголовок h2</h2>
+          <h3>Заголовок h3</h3>
+          <h4>Заголовок h4</h4>
+          <h5>Заголовок h5</h5>
+          <h6>Заголовок h6</h6>
+          <p class="font-italic">Курсивный текст</p>
+          <p class="font-weight-bold">Жирный текст</p>
+          <a href="#">Ссылка</a>
+          <a class="link-decoration" href="">Ссылка с подчеркиванием</a>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Хлебные крошки</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="text-secondary-3" href="/">Mebel.org</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Промо коды</li>
+            </ul>
+          </nav>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Кнопки</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <div class="mb-3">
+            <button class="btn btn-cyan" type="button" name="button">btn-primary</button>
+            <button class="btn btn-danger" type="button" name="button">btn-danger</button>
+            <button class="btn btn-success" type="button" name="button">btn-success</button>
+            <button class="btn btn-warning" type="button" name="button">btn-warning</button>
+            <button class="btn btn-info btn-rounded" type="button" name="button">btn-rounded</button>
+            <button class="btn btn-cyan btn-rounded" type="button" name="button">btn-rounded</button>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-outline-cyan" type="button" name="button">btn-outline-primary</button>
+            <button class="btn btn-outline-success" type="button" name="button">btn-outline-success</button>
+            <button class="btn btn-outline-info btn-rounded" type="button" name="button">btn-rounded</button>
+            <button class="btn btn-outline-cyan btn-rounded" type="button" name="button">btn-rounded</button>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-outline-cyan col-12" type="button" name="button">Показать еще</button>
+          </div>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Формы</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <!--<label for="validationTooltip01">Имя</label>-->
+                <input type="text" name="email" class="form-control" id="validationTooltip01" placeholder="Адрес электронной почты" required>
+                <div class="valid-tooltip">
+                  Отлично!
+                </div>
+                <div class="invalid-tooltip">
+                  Не забывайте ставить @ и не менее двух знаков после точки
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <input type="text" name="password" class="form-control" id="validationTooltip07" placeholder="Введите пароль" required>
+                <div class="valid-tooltip">
+                  Супер!
+                </div>
+                <div class="invalid-tooltip">
+                  Похоже, это не ваш пароль. Постарайтесь вспомнить свой
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <input type="text" name="password" class="form-control" id="validationTooltip02" placeholder="Придумайте пароль" required>
+                <div class="valid-tooltip">
+                  Отличный пароль!
+                </div>
+                <div class="invalid-tooltip">
+                  Этот пароль так себе. Вы можете лучше!
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                <div class="valid-tooltip">
+                  Замечательно!
+                </div>
+                <div class="invalid-tooltip">
+                  Навряд ли ваше имя содержит что-то кроме букв
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <input type="text" name="link" class="form-control" placeholder="Ссылка на акцию" required>
+                <div class="valid-tooltip">
+                  Спасибо!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <input type="text" name="phone" class="form-control" id="validationTooltip04" placeholder="Телефон" required>
+                <div class="valid-tooltip">
+                  Превосходно!
+                </div>
+                <div class="invalid-tooltip">
+                  Обычно телефон содержит более 6 символов...
+                </div>
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input required type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Согласен на обработку персональных данных</label>
+              <div class="invalid-tooltip">
+                Вам же не так сложно поставить галочку, правда?
+              </div>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Выберите файл</label>
+              <div class="valid-tooltip">
+                Превосходно!
+              </div>
+              <div class="invalid-tooltip">
+                Обычно телефон содержит более 6 символов...
+              </div>
+            </div>
+            <textarea type="text" name="textare" id="" cols="30" rows="10"></textarea>
+            <button class="btn btn-cyan" type="submit">Отправить</button>
+          </form>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Табы</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <p class="my-2">Но внедрение современных методик создает предпосылки для поэтапного и последовательного развития общества.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <p class="my-2">Предварительные выводы неутешительны: укрепление и развитие внутренней структуры не оставляет шанса.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <p class="my-2">Но базовые сценарии поведения пользователей, превозмогая сложившуюся непростую экономическую ситуацию, объявлены нарушающими общечеловеческие нормы этики и морали.</p>
+            </div>
+          </div>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <nav>
+            <div class="nav nav-tabs d-flex" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link flex-fill text-center active" id="nav-x-tab" data-toggle="tab" href="#nav-x" role="tab" aria-controls="nav-x" aria-selected="true">Home</a>
+              <a class="nav-item nav-link flex-fill text-center" id="nav-y-tab" data-toggle="tab" href="#nav-y" role="tab" aria-controls="nav-y" aria-selected="false">Profile</a>
+              <a class="nav-item nav-link flex-fill text-center" id="nav-z-tab" data-toggle="tab" href="#nav-z" role="tab" aria-controls="nav-z" aria-selected="false">Contact</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-x" role="tabpanel" aria-labelledby="nav-x-tab">
+              <p class="my-2">Но внедрение современных методик создает предпосылки для поэтапного и последовательного развития общества.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-y" role="tabpanel" aria-labelledby="nav-y-tab">
+              <p class="my-2">Предварительные выводы неутешительны: укрепление и развитие внутренней структуры не оставляет шанса.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-z" role="tabpanel" aria-labelledby="nav-z-tab">
+              <p class="my-2">Но базовые сценарии поведения пользователей, превозмогая сложившуюся непростую экономическую ситуацию, объявлены нарушающими общечеловеческие нормы этики и морали.</p>
+            </div>
+          </div>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Слайдер (slick)</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <div class="slider">
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+          </div>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Пангинация</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <nav aria-label="Navigation">
+            <ul class="pagination pagination-primary">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Дропдаун</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <div class="dropdown" style="width: 200px;">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+            Список
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Отзыв</h2>
+    <div class="row">
+      <div class="col-5">
+        <code>
+
+          <div class="d-flex align-items-center justify-content-between">
+            <h2 class="font-weight-bold">Рейтинг</h2>
+            <div class="" style="font-size:1rem;">
+              <div class="text-warning d-inline-block">
+                <i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i>
+              </div>
+              <b class="ml-1">2.0</b>
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-6 text-center my-2">
+              <div class="py-2 bg-secondary-5 rounded">
+                <h5>Всего отзывов</h5>
+                <b class="display-6">44</b>
+              </div>
+            </div>
+            <div class="col-6 text-center my-2">
+              <div class="py-2 bg-secondary-5 rounded">
+                <h5>Ответов продавца</h5>
+                <b class="display-6">15</b>
+              </div>
+            </div>
+          </div>
+          <div class="my-2">
+            <div class="row my-1">
+              <div class="col-12 d-flex align-items-center">
+                <span class="text-secondary-3 font-weight-bold">5</span>
+                <i class="mo-star text-warning ml-2"></i>
+                <div class="progress flex-fill ml-2">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-1">
+              <div class="col-12 d-flex align-items-center">
+                <span class="text-secondary-3 font-weight-bold">4</span>
+                <i class="mo-star text-warning-2 ml-2"></i>
+                <div class="progress flex-fill ml-2">
+                  <div class="progress-bar bg-warning-2" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-1">
+              <div class="col-12 d-flex align-items-center">
+                <span class="text-secondary-3 font-weight-bold">3</span>
+                <i class="mo-star text-warning-3 ml-2"></i>
+                <div class="progress flex-fill ml-2">
+                  <div class="progress-bar bg-warning-3" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-1">
+              <div class="col-12 d-flex align-items-center">
+                <span class="text-secondary-3 font-weight-bold">2</span>
+                <i class="mo-star text-warning-4 ml-2"></i>
+                <div class="progress flex-fill ml-2">
+                  <div class="progress-bar bg-warning-4" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-1">
+              <div class="col-12 d-flex align-items-center">
+                <span class="text-secondary-3 font-weight-bold">1</span>
+                <i class="mo-star text-warning-5 ml-2"></i>
+                <div class="progress flex-fill ml-2">
+                  <div class="progress-bar bg-warning-5" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-cyan col-12 my-1" type="button" name="button">Оставить отзыв</button>
+        </code>
+      </div>
+      <div class="col-7">
+        <code>
+          <div class="testimonials">
+            <div class="row my-2 d-flex align-items-center">
+              <div class="col-2">
+                <img class="rounded-circle" src="img/avatar.png" alt="">
+              </div>
+              <div class="col-10">
+                <h4 class="font-weight-bold">Владимир Иванов<span class="testimonials__date ml-3 text-secondary-3 font-weight-normal">11 апреля 2018</span></h4>
+                <div class="text-warning d-inline-block">
+                  <i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i>
+                </div>
+                <b class="ml-1">2.0</b>
+              </div>
+            </div>
+            <div class="my-2">
+              <h5>Комментарий</h5>
+              <p>Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения существенных финансовых и административных условий.</p>
+            </div>
+            <div class="my-2">
+              <h5>Достоинства</h5>
+              <p>Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения существенных финансовых и административных условий.</p>
+            </div>
+            <div class="my-2">
+              <h5>Недостатки</h5>
+              <p>Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения существенных финансовых и административных условий.</p>
+            </div>
+            <div class="d-flex justify-content-between my-2">
+              <div class="">
+                <span class="text-secondary-3">Ответ полезен?</span>
+                <button class="btn btn-link py-0" type="button" name="button"><i class="mo-like"></i></button><span class="text-success">15</span>
+                <button class="btn btn-link py-0" type="button" name="button"><i class="mo-dislike"></i></button><span class="text-danger">15</span>
+              </div>
+              <div class="">
+                <button class="btn btn-link py-0" type="button" data-toggle="collapse" data-target="#xxx" aria-expanded="false" aria-controls="xxx">
+                  Ответ продавца <i class="mo-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="collapse" id="xxx">
+              <div class="card card-body">
+                <div class="row my-2 d-flex align-items-center">
+                  <div class="col-2">
+                    <img class="rounded-circle" src="img/avatar.png" alt="">
+                  </div>
+                  <div class="col-10">
+                    <h4 class="font-weight-bold">Владимир Иванов<span class="testimonials__date ml-3 text-secondary-3 font-weight-normal">11 апреля 2018</span></h4>
+                    <div class="text-warning d-inline-block">
+                      <i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i><i class="mo-star"></i>
+                    </div>
+                    <b class="ml-1">2.0</b>
+                  </div>
+                </div>
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+              </div>
+            </div>
+            <div class="my-2">
+              <button class="btn btn-outline-cyan col-12" type="button" name="button">Показать еще</button>
+            </div>
+          </div>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Превью блога</h2>
+    <div class="row">
+      <div class="col-5">
+        <code>
+          <a href="#" class="text-link" tabindex="0">
+            <img src="https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="rounded my-1" alt="">
+            <h2 class="font-weight-bold my-1">Как надо: декор небольшого пространства</h2>
+            <p class="my-1">С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании систем массового участия.</p>
+          </a>
+        </code>
+      </div>
+      <div class="col-7">
+        <code>
+          <a href="#" class="bg-dark text-light p-3 rounded d-flex align-items-start flex-column" style="height:15rem;background:url('https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');    background-blend-mode: soft-light;background-size: cover;">
+            <div class="mb-auto">
+              <span class="badge ">New</span>
+            </div>
+            <div>
+              <h3 class="">Сундук для пирата и принцессы</h3>
+              <div class="">
+                <span class="">Категория</span> <span class="ml-2">Август 17 2018</span>
+              </div>
+            </div>
+          </a>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Тэги</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <a href="#" class="btn btn-rounded btn-outline-secondary-4">Тег</a>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Превью товара</h2>
+    <div class="row">
+      <div class="col-4">
+        <code>
+          <div class="manufactures__item_mini ">
+            <div class="col-12 bg-light border rounded p-3 text-center">
+              <img class="my-3" src="img/avatar.png" alt="">
+              <h3 class="font-weight-bold">Пензенский мебельный комбинат</h3>
+              <p>Товары в наличии и под заказ от 2 000 р.</p>
+              <span class="d-inline-block btn-rounded text-light bg-secondary-3 px-4 my-3">Эконом</span>
+              <hr class="manufactures__item_mini-category"/>
+              <div class="d-flex justify-content-around">
+                <div class="m-2">
+                  <i class="mo-sofa display-8 text-warning"></i>
+                  <p>Кровати</p>
+                </div>
+                <div class="m-2">
+                  <i class="mo-table display-8 text-warning"></i>
+                  <p>Стулья</p>
+                </div>
+                <div class="m-2">
+                  <i class="mo-armchair display-8 text-warning"></i>
+                  <p>Диваны</p>
+                </div>
+                <div class="m-2">
+                  <i class="mo-school display-8 text-warning"></i>
+                  <p>Стулья</p>
+                </div>
+                <div class="m-2">
+                  <i class="mo-plus display-8 text-secondary-3"></i>
+                  <p>Диваны</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Иконочный шрифт</h2>
+    <div class="row">
+      <div class="col-12">
+        <code>
+          <i class="mo-star"></i>
+          <i class="mo-star-empty"></i>
+          <i class="mo-check"></i>
+          <i class="mo-disabled"></i>
+          <i class="mo-mattress"></i>
+          <i class="mo-tag"></i>
+          <i class="mo-calendar"></i>
+          <i class="mo-mail"></i>
+          <i class="mo-comment"></i>
+          <i class="mo-copy"></i>
+          <i class="mo-dislike"></i>
+          <i class="mo-dislike-full"></i>
+          <i class="mo-like"></i>
+          <i class="mo-like-full"></i>
+          <i class="mo-eye"></i>
+          <i class="mo-copies"></i>
+          <i class="mo-fb"></i>
+          <i class="mo-google"></i>
+          <i class="mo-google-plus"></i>
+          <i class="mo-inst"></i>
+          <i class="mo-twitter"></i>
+          <i class="mo-tg"></i>
+          <i class="mo-viber"></i>
+          <i class="mo-vk"></i>
+          <i class="mo-ok"></i>
+          <i class="mo-whatsapp"></i>
+          <i class="mo-arrow-right"></i>
+          <i class="mo-arrow-left"></i>
+          <i class="mo-arrow-down"></i>
+          <i class="mo-arrow-up"></i>
+          <i class="mo-person"></i>
+          <i class="mo-registred"></i>
+          <i class="mo-cart"></i>
+          <i class="mo-globe"></i>
+          <i class="mo-cart-add"></i>
+          <i class="mo-search"></i>
+          <i class="mo-print"></i>
+          <i class="mo-send"></i>
+          <i class="mo-trash"></i>
+          <i class="mo-place"></i>
+          <i class="mo-photo"></i>
+          <i class="mo-tile"></i>
+          <i class="mo-tile-many"></i>
+          <i class="mo-fav"></i>
+          <i class="mo-fav-full"></i>
+          <i class="mo-share"></i>
+          <i class="mo-plus"></i>
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
+
+//= template/footer.html
+//= template/script.html
+
+//= template/modals.html
+
+<!--Script For Slider-->
+
+<script>
+$(document).ready(function(){
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+});
+</script>
+
+
+

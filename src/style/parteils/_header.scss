@@ -1,0 +1,293 @@
+/*
+* Hamburgers
+*/
+
+@import "parteils/hat/hamburgers.scss";
+
+.header{
+  //overflow: hidden;
+  //height: max-content;
+  height: 2.5rem;
+  z-index: 1045;
+  &__search {
+    position: relative;
+    flex-grow: 1;
+  }
+  &__center{
+    &-navbar{
+      max-width: calc(100vw - 11rem);
+      .nav{
+        height: 100%;
+        &-link{
+          display: flex;
+          padding: 0 1rem;
+          align-items: center;
+          a{
+            color: $light;
+          }
+          &:hover,&.active{
+            background: #197ab2;
+          }
+        }
+      }
+    }
+    &-search{
+      height: 2.1rem;
+      flex-grow: 1;
+      padding-right: 5.2em;
+      &::-webkit-input-placeholder { /* Chrome */
+        color: $light;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $light;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $light;
+        opacity: 1;
+      }
+      &:-moz-placeholder { /* Firefox 4 - 18 */
+        color: $light;
+        opacity: 1;
+      }
+
+      &:focus{
+        .header__center-search-result{
+          display: block;
+        }
+      }
+
+      &-result{
+        display: none;
+        position: absolute;
+        top: 0;
+        width:100%;
+      }
+      &_btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 0.7em;
+      }
+    }
+  }
+  &__right{
+    right: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+  }
+  &__login {
+    display: none;
+    position: absolute;
+    top: 2.85em;
+    right: 0;
+    &_text {
+      font-size: 0.9rem;
+      position: relative;
+      &:after, &:before {
+        position: absolute;
+        top: 0.75em;
+        content: '';
+        width: 2.6em;
+        height: 0.05em;
+        background-color: $secondary-5;
+      }
+      &:after {
+        left: 0;
+      }
+      &:before {
+        right: 0;
+      }
+    }
+    &_shop {
+      font-size: 0.9rem;
+    }
+    &-notreg {
+      height: 100%;
+    }
+    &-reg {
+      height: 100%;
+    }
+  }
+  &__account {
+    &-menu {
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      top: 2.85em;
+      right: 0;
+      display: none;
+    }
+    &-list {
+      &_item {
+        &-link {
+          padding: 0 30px;
+        }
+        &:hover {
+          background-color: $primary;
+        }
+        &-text {
+          color: $white;
+        }
+        &-num {
+          color: $icolight;
+        }
+      }
+    }
+  }
+}
+
+.header__login-notreg:hover .header__login {
+  display: block;
+}
+
+.header__login-reg:hover .header__account-menu {
+  display: block;
+}
+
+.nav-adaptive {
+  display: none;
+}
+
+.header__center-search_btn:hover .header__center-search_btn-ico {
+  color: #fff;
+}
+
+.geostation-btn {
+  height: 100%;
+  &-ico {
+    font-size: 1.1rem;
+  }
+  &:hover .geostation-btn-ico {
+    color: #fff;
+    transition: .3s ease;
+  }
+}
+
+.personal {
+  &-btn {
+  height: 100%;
+  padding: 0 0.5em 0 2em;
+  line-height: 2.9em;
+    &-ico {
+      font-size: 1.4rem;
+    }
+    &:hover .header__login {
+      display: block;
+    }
+    &-img {
+      line-height: 2.25em;
+    }
+  }
+  &-img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.cart-btn {
+  padding: 0 0.7em;
+  margin-right: 0.7rem;
+  height: 100%;
+  line-height: 2.85em;
+  &-ico {
+    font-size: 1.3rem;
+  }
+}
+
+.personal-btn-ico, .cart-btn-ico, .geostation-btn-ico, .header__center-search_btn-ico {
+  transition: .3s ease;
+  color: $icolight;
+  &:hover{
+    color: #fff;
+    transition: .3s ease;
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  height: 100%;
+  &-box {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 16px;
+      background: #BDE7FF;
+      top: 50%;
+      margin-top: -6px;
+      right: -11px;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+ .nav, .geostation-modal__wrap, .header__left {
+  display: none;
+ }
+ .header__center {
+  max-width: none;
+  width: 100%;
+  &-navbar {
+    max-width: none;
+  }
+  &-search {
+    padding-left: 3.8em;
+  }
+ }
+ .header__right {
+    position: relative;
+  }
+ .hamburger {
+  display: block;
+ }
+ .cart-btn {
+    padding: 0 0.5em 0 0;
+    margin-right: 0;
+ }
+ .personal-btn {
+    padding: 0 0.5em 0 1em;
+ }
+ .nav-adaptive {
+  display: block;
+  position: absolute;
+  height: calc(100vh - 40px);
+  top: 40px;
+  left: 0;
+  border-top: 1px solid #f7f7f7;
+  background: #1e91d3;
+  padding: 20px 0;
+ }
+ .nav-adaptive a {
+  color: #fff !important;
+  padding: 10px 20px;
+  }
+  .nav-adaptive .nav-link:hover {
+    background: #36aaec;
+  }
+  .header {
+    height: 3.15rem;
+  }
+  .personal-btn {
+    line-height: 3.45em;
+  }
+  .cart-btn {
+    line-height: 3.55em;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .personal-btn {
+    padding: 0 0.5em;
+  }
+  
+}
+
+@include media-breakpoint-down(xs) {
+  .header__center-search_btn {
+    display: none;
+  }
+}
+

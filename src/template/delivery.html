@@ -1,0 +1,116 @@
+
+<section id="delivery" class="delivery py-6">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Доставка и сборка</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-5">
+				<div class="w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<div class="py-4 w-75">
+							<h4>Доставка в пределах КАД</h4>
+							<p class="mt-4 pr-2">Накануне дня доставки сообщим 3-ех часовой интервал прибытия экипажа доставки</p>
+							<p class="">Ближайшая: 8 июня (пятница)</p>
+						</div>
+						<div class="text-center w-25 pl-2">
+							<p class="font-weight-bold">990 руб</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center justify-content-between border-top border-secondary-5">
+						<div class="py-4 w-75">
+							<h4>Доставка за КАД</h4>
+							<p class="mt-4 pr-2">Километраж считается от КАД до адреса покупателя в одну сторону</p>
+							<p class="pr-2">Ближайшая: 8 июня (пятница)</p>
+						</div>
+						<div class="text-center w-25">
+							<p class="font-weight-bold pl-2">990 руб</p>
+							<p class="pl-2">+ 20 руб./км</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center justify-content-between border-top border-secondary-5">
+						<div class="py-4 w-75">
+							<h4>Подъем на этаж по лестнце</h4>
+							<p class="mt-4 pr-2">До 10 кг бесплатно, более 10 кг — от 100 р. в зависимости от веса и объема заказа</p>
+						</div>
+						<div class="text-center w-25">
+							<p class="font-weight-bold pl-2">150 руб</p>
+							<p class="pl-2">за 1 этаж</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center justify-content-between border-top border-secondary-5">
+						<div class="py-4 w-75">
+							<h4>Подъем на лифте</h4>
+						</div>
+						<div class="text-center w-25">
+							<p class="font-weight-bold pl-2">150 руб</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center justify-content-between border-top border-secondary-5">
+						<div class="py-4 w-75">
+							<h4>Сборка в день доставки</h4>
+							<p class="mt-4 pr-2">Профессиональные сотрудники службы доставки приступят к сборке мебели сразу и вам не придётся тратить свое время дважды</p>
+						</div>
+						<div class="text-center w-25">
+							<p class="font-weight-bold pl-2">1 527 руб</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-5">
+				<div class="mt-1 mt-lg-0 py-4">
+					<h4>Пункты самовывоза</h4>
+					<div id="map-delivery" style="width: 100%; height: 400px;" class="mt-4"></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+ymaps.ready(init_delivery);
+
+function init_delivery(){ 
+    var myMap2 = new ymaps.Map("map-delivery", {
+        center: [59.939521, 30.314930],
+        zoom: 12
+    });
+    clusterer = new ymaps.Clusterer({
+      clusterHideIconOnBalloonOpen: false,
+      geoObjectHideIconOnBalloonOpen: false
+    });
+
+    var getPointData = function (index) {
+      return {
+        balloonContentBody: 'балун <strong>метки ' + index + '</strong>',
+        clusterCaption: 'метка <strong>' + index + '</strong>'
+      };
+    },
+    getPointOptions = function () {
+      // return {
+        // preset: 'islands#violetIcon'
+      // };
+    },
+    points = [
+        [59.939521, 30.314930], [59.940710, 30.287647], [59.937170, 30.377828], [59.955274, 30.358303]
+      ],
+    geoObjects = [];
+
+    for(var i = 0, len = points.length; i < len; i++) {
+      geoObjects[i] = new ymaps.Placemark(points[i], getPointData(i), getPointOptions());
+    }
+    clusterer.add(geoObjects);
+    myMap2.geoObjects.add(clusterer);
+    
+    myMap2.controls.remove('fullscreenControl');
+    myMap2.controls.remove('rulerControl');
+    myMap2.controls.remove('geolocationControl');
+    myMap2.controls.remove('trafficControl');
+    myMap2.controls.remove('typeSelector');
+    myMap2.behaviors.disable(['scrollZoom']);
+    
+}
+</script>

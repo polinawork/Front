@@ -1,0 +1,9 @@
+
+.method {
+	&__wrap {
+		max-width: 200px;
+		&_text {
+			line-height: 1.2em;
+		}
+	}
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Mebel.org</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="mask-icon" href="img/favicon.png">
+  <link rel="mask-icon" href="img/favicon.svg">
+
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i" rel="stylesheet">
+  <!--Styles-->
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+
+<section class="header d-flex align-items-center bg-primary position-fixed position-relative col-12">
+
+  
+  <div class="header__left position-absolute float-left p-1">
+      <a href="{{ route('client.index') }}">
+          <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.19">
+            <path opacity="0.19" d="M0 -4.16036e-08L12.5 6.99629L25 -4.16036e-08V6.99629L12.5 13.9926L0 6.99629V-4.16036e-08Z" transform="translate(3 5.49902)" fill="white" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="square"/>
+            <path opacity="0.19" d="M0 -8.32072e-08V13.9926L6.25 17.4907V3.49814L0 -8.32072e-08Z" transform="translate(3 12.4941)" fill="white" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="square"/>
+            <path opacity="0.19" d="M6.25 -8.32072e-08V13.9926L0 17.4907V3.49814L6.25 -8.32072e-08Z" transform="translate(21.75 12.4941)" fill="white" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="square"/>
+            <path opacity="0.19" d="M0.154381 13.9915L6.25 10.4944V3.49814L0 1.84905e-07L0.154381 13.9915Z" transform="translate(9.25 15.9922)" fill="white" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="square"/>
+            <path opacity="0.19" d="M0 3.49814L6.25 -2.08018e-08L18.75 6.99628L12.5 10.4944L0 3.49814Z" transform="translate(3 2)" fill="white" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="square"/>
+            <path opacity="0.19" d="M6.25 13.9926L0 10.4944V3.49814L6.25 1.84905e-07V13.9926Z" transform="translate(15.5 15.9922)" fill="white" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="square"/>
+            <path opacity="0.19" d="M12.5 3.49814L6.25 -2.08018e-08L0 3.49814L6.25 6.99628L12.5 3.49814Z" transform="translate(15.5 2)" fill="white" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="square"/>
+            </g>
+            <path d="M0 24.487V3.49814L6.25 -4.16036e-08L12.5 3.49814L18.75 -4.16036e-08L25 3.49814V24.487L18.75 27.9851L12.5 24.487L6.25 27.9851L0 24.487Z" transform="translate(3 2.01465)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+            <path d="M0 3.49814L6.25 4.53017e-07V13.9926" transform="translate(15.5 16.0068)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+            <path d="M0 3.49814L6.25 1.84905e-07" transform="translate(21.75 12.5088)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+            <path d="M0 1.84905e-07L12.5 6.99629" transform="translate(3 12.5088)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+            <path d="M0 7.21129e-07V6.99628" transform="translate(15.5 19.5049)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+            <path d="M0 4.53017e-07V13.9926" transform="translate(9.25 16.0068)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+            <path d="M0 2.26508e-07L12.5 6.99629L25 2.26508e-07" transform="translate(3 5.5127)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+            <path d="M0 2.26508e-07L6.25 3.49814" transform="translate(15.5 5.5127)" stroke="white" stroke-width="2" stroke-miterlimit="3" stroke-linecap="round"/>
+          </svg>
+        <!--span class="header__logo-text"><span>{{ config('app.name', 'Mebel.org') }}</span></span-->
+      </a>
+  </div>
+  <ul class="nav nav-adaptive d-none">
+    <li class="nav-link" style="z-index:999">
+      <a href="/">Главная</a>
+    </li>
+    <li class="nav-link">
+      <a href="{{ route('client.promocodes') }}">Промокоды</a>
+    </li>
+    <li class="nav-link">
+      <a class="header__menu-link" href="{{ route('client.order') }}">
+        Заявка
+      </a>
+    </li>
+    <li class="nav-link">
+      <a class="header__menu-link" href="{{ route('client.vacancies') }}">
+        Вакансии
+      </a>
+    </li>
+    <li class="nav-link">
+      <a class="header__menu-link" href="{{ route('client.order') }}">
+        Кухонные аксессуары
+      </a>
+    </li>
+    <li class="nav-link">
+      <a class="header__menu-link" href="{{ route('client.vacancies') }}">
+        Кухни и бытовая техника
+      </a>
+    </li>
+  </ul>
+
+  
+  <div class="header__center container position-relative">
+    <div class="row d-flex justify-content-center">
+
+      <nav class="header__center-navbar navbar p-0 col-12">
+          <ul class="nav">
+            <li class="nav-link" style="z-index:999">
+              <a href="/">Главная</a>
+            </li>
+            <li class="nav-link">
+              <a href="{{ route('client.promocodes') }}">Промокоды</a>
+            </li>
+            <li class="nav-link">
+              <a class="header__menu-link" href="{{ route('client.order') }}">
+                Заявка
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="header__menu-link" href="{{ route('client.vacancies') }}">
+                Вакансии
+              </a>
+            </li>
+          </ul>
+
+          <div class="header__search form-inline py-0 ml-md-3">
+            <form class="form-inline flex-grow-1 position-relative">
+              <input class="header__center-search search-input form-control bg-info text-light border-0" type="search" placeholder="Поиск по Mebel.org" aria-label="Поиск">
+              <div class="delete-search position-absolute d-none">
+                <button type="button" class="btn btn-close p-0 btn-close-search btn-close-search-hat"></i></button>
+              </div>
+              <button class="header__center-search_btn text-light btn btn-link py-0"><i class="mo-search header__center-search_btn-ico"></i></button>
+              <div class="hamburger hamburger--minus position-absolute">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+
+
+              <!--<div class="hamburger position-absolute p-3">
+                <div class="hamburger-wrap">
+                  <div class="hamburger-inner position-absolute bg-white rounded"></div>
+                </div>
+              </div>-->
+            </form>
+            <div class="header__center-search-result">
+      
+            </div>
+          </div>
+          <div class="geostation-modal__wrap">
+            <button class="btn btn-link text-light border-0 rounded-0 geostation-btn" type="button" data-toggle="modal" data-target="#geostationModal"><i class="mo-place geostation-btn-ico"></i></button>
+            <div class="geostation-modal__alert border border-secondary-5 p-3 bg-white rounded">
+              <div class="geostation-modal__alert_city text-center">Санкт-Петербург</div>
+              <div class="geostation-modal__alert_text text-center mb-3
+              mt-1">Это ваш город?</div>
+              <div class="geostation-modal__alert_btns d-flex">
+                <button class="geostation-modal__alert_btns-btn btn btn-cyan city-yes mr-3">Да</button>
+                <button class="geostation-modal__alert_btns-btn btn btn-outline-cyan city-no" type="button" data-toggle="modal" data-target="#geostationModal">Нет</button>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="header__right d-flex align-items-center">
+    <div class="header__login-reg position-relative">
+      <div class="btn personal-btn personal-btn-reg">
+        <i class="fas mo-registred personal-btn-ico"></i>
+      </div>
+      <div class="btn personal-btn personal-btn-img personal-btn-reg">
+        <img class="personal-img rounded-circle" src="img/avatar.png" alt="">
+      </div>
+      <div class="header__account-menu bg-info position-absolute">
+        <ul class="header__account-list list-unstyled py-2">
+          <li class="header__account-list_item">
+            <a class="header__account-list_item-link d-flex py-2" href=""><span class="header__account-list_item-text text">Ваш профиль</span></a>
+          </li>
+          <li class="header__account-list_item">
+            <a class="header__account-list_item-link d-flex justify-content-between py-2" href=""><span class="header__account-list_item-text">Отзывы</span><div class="header__account-list_item-num ml-3">10</div></a>
+          </li>
+          <li class="header__account-list_item">
+            <a class="header__account-list_item-link d-flex justify-content-between py-2" href=""><span class="header__account-list_item-text">Сравнение</span><div class="header__account-list_item-num ml-3">5</div></a>
+          </li>
+          <li class="header__account-list_item">
+            <a class="header__account-list_item-link d-flex justify-content-between py-2" href=""><span class="header__account-list_item-text">Избранное</span><div class="header__account-list_item-num ml-3">19</div></a>
+          </li>
+          <li class="header__account-list_item">
+            <a class="header__account-list_item-link d-flex justify-content-between py-2" href=""><span class="header__account-list_item-text">Вопросы</span><div class="header__account-list_item-num ml-3">150</div></a>
+          </li>
+          <li class="header__account-list_item">
+            <a class="header__account-list_item-link d-flex justify-content-between py-2" href=""><span class="header__account-list_item-text">Выход</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__login-notreg position-relative">
+      <div class="btn personal-btn">
+        <i class="fas mo-person personal-btn-ico"></i>
+      </div>
+      <div class="p-4 header__login border border-secondary-5 bg-white">
+        <button type="button" class="btn btn-cyan mb-2 col-12" data-toggle="modal" data-dismiss="modal" data-target="#sign-in-modal">Войти</button>
+        <p class="header__login_text text-center mt-4 mb-3 text-secondary-1">Нет аккаунта?</p>
+        <button type="button" class="btn btn-outline-cyan col-12 mb-1" data-toggle="modal" data-dismiss="modal" data-target="#sign-out-modal">Зарегистрироваться</button>
+        <div class="header__login_shop mt-3">
+          <a class="header__login_shop-link" href="javascript:void(0);">Вход для магазина</a>
+        </div>
+      </div>
+      
+    </div>
+
+      
+
+      <!--a class="btn btn-primary text-light border-0 rounded-0" type="button" href="{{ route('client.profile') }}"><img src="{{ Auth::user()->avatar }}" style="width:40px" class="circle"></i></a-->
+
+    <button class="btn btn-link text-light border-0 rounded-0 cart-btn" type="button" disabled><i class="mo-cart cart-btn-ico"></i></button>
+
+  </div>
+
+</section>
+
+
+<!--nav id="mmenu">
+   <ul class="m-0 p-0">
+      <li><a href="/">Главная</a></li>
+      <li><a href="/promocodes/">Промокоды</a></li>
+   </ul>
+</nav-->
+
+<section id="page" class="mm-page mm-slideout">

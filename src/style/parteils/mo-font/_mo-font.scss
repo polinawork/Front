@@ -1,0 +1,198 @@
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mo-star:before {
+   content: "\e92c";
+}
+
+.mo-star-empty:before {
+   content: "\e90c";
+}
+
+.mo-check:before {
+   content: "\e916";
+}
+
+.mo-tag:before {
+   content: "\e914";
+}
+
+.mo-calendar:before {
+   content: "\e915";
+}
+
+.mo-mail:before {
+   content: "\e918";
+}
+
+.mo-comment:before {
+   content: "\e333";
+}
+
+.mo-copy:before {
+   content: "\e91b";
+}
+
+.mo-dislike:before {
+   content: "\e910";
+}
+
+.mo-dislike-full:before {
+   content: "\e911";
+}
+
+.mo-like:before {
+   content: "\e912";
+}
+
+.mo-like-full:before {
+   content: "\e913";
+}
+
+.mo-eye:before {
+   content: "\e919";
+}
+
+.mo-fb:before {
+   content: "\e91a";
+}
+
+.mo-copies:before {
+   content: "\e901";
+}
+
+.mo-google:before {
+   content: "\e91c";
+}
+
+.mo-google-plus:before {
+   content: "\e91d";
+}
+
+.mo-inst:before {
+   content: "\e924";
+}
+
+.mo-twitter:before {
+   content: "\e92e";
+}
+
+.mo-tg:before {
+   content: "\e92d";
+}
+
+.mo-viber:before {
+   content: "\e931";
+}
+
+.mo-vk:before {
+   content: "\e932";
+}
+
+.mo-ok:before {
+   content: "\e92f";
+}
+
+.mo-whatsapp:before {
+   content: "\e933";
+}
+
+.mo-arrow-right:before {
+   content: "\e902";
+}
+
+.mo-arrow-left:before {
+   content: "\e903";
+}
+
+.mo-arrow-down:before {
+   content: "\e90d";
+}
+
+.mo-arrow-up:before {
+   content: "\e90e";
+}
+
+.mo-person:before {
+   content: "\e91e";
+}
+
+.mo-registred:before {
+   content: "\e95b";
+}
+
+.mo-cart:before {
+   content: "\e91f";
+}
+
+.mo-globe:before {
+   content: "\e925";
+}
+
+.mo-cart-add:before {
+   content: "\e926";
+}
+
+.mo-search:before {
+   content: "\e927";
+}
+
+.mo-print:before {
+   content: "\e92a";
+}
+
+.mo-send:before {
+   content: "\e92b";
+}
+
+
+
+.mo-trash:before {
+   content: "\e90b";
+}
+
+.mo-place:before {
+   content: "\e930";
+}
+
+
+
+.mo-photo:before {
+   content: "\e93e";
+}
+
+.mo-tile:before {
+   content: "\e940";
+}
+
+.mo-tile-many:before {
+   content: "\e941";
+}
+
+.mo-fav:before {
+   content: "\e93d";
+}
+
+.mo-fav-full:before {
+   content: "\e93f";
+}
+
+.mo-share:before {
+   content: "\e93c";
+}
+
+.mo-plus:before {
+   content: "\e904";
+}

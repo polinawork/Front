@@ -1,0 +1,331 @@
+//= template/header.html
+
+<section id="order">
+	<div class="order position-relative full-height pb-0 pb-md-5">
+		<!--<a class="btn order__to-main position-absolute text-white d-block mt-4 mx-md-3 mx-2 order-btn" href="#"><i class="mo-arrow-left"></i>  На главную</a>-->
+		<div class="text-center">
+			<button id="order-btn-1" class="btn btn-order order__btn bg-white text-center mt-4 mx-3 order-btn">Оставить заявку</button>
+		</div>
+		<div id="order-messages" class="justify-content-center">
+			<p id="order-show-1" class="order__title text-center text-white font-weight-bold ">Как мы помогаем?</p>
+			<div id="order-wrap" class="order-wrap d-flex flex-column position-absolute justify-content-center w-100 flex-wrap">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-6 col-md-10">
+
+							<div class="order__message order__message_user" id="order-show-1-1">
+								<div class="d-flex flex-column">
+									<p class="order__message_user-name text-white mb-2">Алексей</p>
+									<p class="order__text order__text_user mb-3 text-left">Привет. У меня сломался диван. Вы сможете найти такой же?
+									</p>
+								</div>
+							</div>
+
+							<div class="order__message order__message_merchant align-items-end flex-column ml-auto" id="order-show-2">
+								<div class="d-flex flex-column">
+									<p class="order__message_merchant-name text-white mb-2 ml-auto">Mebel.org</p>
+									<p class="order__text order__text_merchant text-right mb-3 ml-auto">
+										Здравствуйте! Отправьте заявку с фотографией и пожеланиями.
+									</p>
+								</div>
+							</div>
+
+							<div class="order__message order__message_merchant align-items-end flex-column ml-auto" id="order-show-3">
+								<div class="d-flex flex-column">
+									<p class="order__text order__text_merchant text-right mb-3 ml-auto">
+										Мы отправим её на 2000 фабрик, они предложат варианты.
+									</p>
+								</div>
+							</div>
+
+							<div class="order__message order__message_user" id="order-show-4">
+								<div class="d-flex flex-column">
+									<p class="order__message_user-name text-white mb-2">Алексей</p>
+									<div class="order__text order__text_user text-left mb-3">
+										<p>Вот! Хочу такой же, можно другого цвета. </p>
+										<img src="img/example.png" alt="Here sofa!" class="mt-2">
+									</div>
+								</div>
+							</div>
+
+							<div class="order__message order__message_merchant ml-auto" id="order-show-5">
+								<div class="d-flex flex-column">
+									<p class="order__message_merchant-name text-white mb-2 ml-auto">Mebel.org</p>
+									<p class="order__text order__text_merchant text-right mb-3 ml-auto" style="width: 300px; height: 300px;">
+										
+									</p>
+								</div>
+							</div>
+
+							<div class="order__message order__message_merchant ml-auto" id="order-show-6">
+								<div class="d-flex flex-column">
+									<p class="order__text order__text_merchant text-right mb-3 ml-auto">
+										Выбирайте!
+									</p>
+								</div>
+							</div>
+							<div class="order__message order__message_user" id="order-show-7">
+								<div class="d-flex flex-column">
+									<p class="order__message_user-name text-white mb-2">Алексей</p>
+									<p class="order__text order__text_user mb-3 text-left">
+										Купил за 15 минут, завтра привезут. Спасибо!
+									</p>
+								</div>
+							</div>
+							<div class="order__message order__message_merchant ml-auto" id="order-show-8">
+								<div class="d-flex flex-column">
+									<p class="order__message_merchant-name text-white mb-2 ml-auto">Mebel.org</p>
+									<div class="order__text order__text_merchant text-right mb-3 ml-auto">
+										<p>Приятного дня. Обращайтесь ещё.</p>
+									</div>
+								</div>
+							</div>
+							<div class="order__message order__message_merchant ml-auto" id="order-show-9">
+								<div class="d-flex flex-column">
+									<div class="order__text order__text_merchant mb-3 text-right ml-auto">
+										<p class="">Найдется всё!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-8">
+							<div class="order__users-img d-flex">
+								<img id="order-img-u-1" class="" src="img/user-sad.png" alt="">
+						    	<img id="order-img-u-2" class="" src="img/user-good.png" alt="">
+						    	<img id="order-img-m-1" class="ml-auto" src="img/merchant.png" alt="">
+						    	<img id="order-img-m-2" class=" ml-auto" src="img/merchant-finder.png" alt="">
+						    	<img id="order-img-m-3" class="ml-auto" src="img/merchant-fun.png" alt="">
+					    	</div>
+					    </div>
+					</div>
+				</div>
+
+				<div class="order__final text-center d-none align-middle" id="order-show-10">
+					<p class="order__final_title text-white">Попробуйте сами:</p>
+					<button id="order-btn-2" class="btn order__btn order__final_button bg-white mt-5">Оставить заявку за минуту</button>
+				</div>						
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-center">
+			<div id="order-form" class="order__form bg-white">
+				<p class="order__form_title text-center">Оставьте заявку на подбор мебели </p>
+				<p class="order__form_text text-center mt-3">Через 15 минут получите предложения с ценой и сроками</p>
+				<form class="needs-validation mb-2" novalidate>
+					<div class="form-row">
+              			<div class="col-12 mb-2 mt-4">
+							<textarea class="form-control order__form_textarea text-secondary-1 form-input-any" placeholder="Красный диван за 50 тысяч. Можно как на фото или еще краснее. Нужен на этой неделе."></textarea>
+						</div>
+					</div>
+					
+					<div class="form-row">
+              			<div class="col-12 mb-2 mt-4 mb-2">
+              				<label class="order__form_label text-secondary-1" for="order-email">Ваш e-mail</label>
+                			<input type="email" name="email" class="form-control w-100 form-input-email" id="order-email" placeholder="Адрес электронной почты" required>
+			                <div class="valid-feedback">
+			                  Отлично!
+			                </div>
+			                <div class="invalid-feedback">
+			                  Не забывайте ставить @ и не менее двух знаков после точки
+			                </div>
+			            </div>
+			        </div>
+
+					<div class="">
+					<!--<input class="order__form_email" id="order-email" type="text" placeholder="ivanov@gmail.com">-->
+					
+						<!--<button class="btn mt-3 bg-white order__form_btn-photo"><i class="mo-photo"></i> Прикрепить фотографии</button>-->
+						<div class="d-flex align-items-center flex-wrap">
+							<div class="order_win  p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="image" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+							<div class="order_win p-1 d-none position-relative">
+								<button type="button" class="btn-close order__button-close"></button>
+								<img id="" class="order-img-select" src="#" alt="">
+							</div>
+						</div>
+						
+					
+
+						<div class="custom-file mt-2 mb-2">
+			              <input type="file" class="custom-file-input form-control-file" id="imgInp" required multiple name="files[]">
+			              <label class="custom-file-label" for="validatedCustomFile">Выберите файл</label>
+			              
+			              <!--<div class="valid-tooltip">
+			                Превосходно!
+			              </div>
+			              <div class="invalid-tooltip">
+			                Обычно телефон содержит более 6 символов...
+			              </div>-->
+			            </div>
+			            <div class="text-right">
+						<button class="btn mt-3 text-white order__form_btn-send">Отправить</button>
+					</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+		
+</section>
+
+//= template/footer.html
+//= template/script.html
+
+//= template/modals.html
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+	let i = 2000; //Число миллисекунд между переходами
+
+	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-show-1-1').show('slow');
+    	$('#order-img-u-1').fadeIn('slow');
+  	}, i);
+
+	setTimeout(function(){
+		console.log("Wait");
+		$('#order-show-1').fadeOut('slow');
+	}, 2 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-img-m-1').fadeIn('slow');
+  	}, 3 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-show-2').show('slow');;
+  	}, 4 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-show-3').show('slow');
+  	}, 5 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-img-u-1').hide();
+    	$('#order-img-u-2').show();
+    	$('#order-show-4').show('slow');
+  	}, 6 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-img-m-1').hide();
+    	$('#order-img-m-3').show();
+    	$('#order-show-5').show('slow');
+    	$('#order-show-1-1').hide('slow');
+    	$('#order-show-2').fadeOut('slow');
+    	$('#order-show-3').fadeOut('slow');
+    	$('#order-show-4').fadeOut('slow');
+  	}, 7 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-img-m-1').hide();
+    	$('#order-img-m-3').show();
+    	$('#order-show-6').show('slow');
+  	}, 8 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-img-m-3').hide();
+    	$('#order-img-m-1').show();
+    	$('#order-show-7').show('slow');
+    	$('#order-show-5').fadeOut('slow');
+    	$('#order-show-6').fadeOut('slow');
+  	}, 9 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-img-m-1').hide();
+    	$('#order-img-m-2').show();
+    	$('#order-show-8').show('slow');
+  	}, 10 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-show-9').show('slow');
+  	}, 11 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-img-u-2').fadeOut('slow');
+    	$('#order-img-m-2').fadeOut('slow');
+    	$('#order-btn-1').fadeOut('slow');
+    	$('#order-show-7').fadeOut('slow');
+    	$('#order-show-8').fadeOut('slow');
+    	$('#order-show-9').fadeOut('slow');
+  	}, 12 * i);
+
+  	setTimeout(function(){
+  		console.log("Wait");
+    	$('#order-form').fadeIn('slow');
+  	}, 12.5 * i);
+
+
+  	$('#order-btn-1').click(function(){
+  		$('#order-form').fadeIn('slow');
+  		$('#order-messages').hide();
+  		$('#order-btn-1').hide();
+  		$('.order').removeClass('full-height');
+  	})
+
+  	function readURL(input) {
+	  	let arr = $('.order-img-select');	
+	  	for(let i=0; i<arr.length; ++i){
+		  	if (input.files && input.files[i]) {
+		        var reader = new FileReader();
+		        reader.onload = function (e) {
+		            $(arr[i]).attr('src', e.target.result);
+		            $(arr[i]).parent().removeClass('d-none');
+		        };
+		        reader.readAsDataURL(input.files[i]);
+		    }	
+	  	}
+	}
+	$("#imgInp").change(function(){
+	    readURL(this);
+	    
+	});
+</script>
+
+

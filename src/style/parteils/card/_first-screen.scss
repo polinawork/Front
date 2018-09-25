@@ -1,0 +1,100 @@
+
+.proto-card{
+	&__label{
+		top: 0;
+		left: 0;
+	}
+	&__label-bt{
+		bottom: 0;
+		left: 45%;
+		border-radius: 3px 3px 0 0;
+		opacity: 0.7;
+	}
+	&__label-comp{
+		top: 0;
+		right: 0;
+		&_item {
+			background-color: $secondary-3;
+			opacity: 0.5;
+			cursor: pointer;
+			transition: 0.3s ease;
+			&-ico {
+				color: $white;
+			}
+			&:hover {
+				background-color: $secondary-1;
+				opacity: 0.7;
+			}
+			&:hover .proto-card__label-comp_item-ico {
+				color: $warning;
+				opacity: 1;
+			}
+		}
+	}
+	&__true-price{
+		font-size: 1.5rem;
+	}
+	&__present-link{
+    	border-bottom: 1px dashed;
+    	outline: none;
+	}
+	&__vary-color{
+		&_wrap{
+			border: 1px solid;
+			cursor: pointer;
+			width: 50px;
+			height: 50px;
+			&-big {
+				width: 75px;
+			}
+			&-color {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&_btn-more{
+
+		}
+	}
+	&__buy-zone{
+		bottom: 0px;
+		width: 100%;
+	}
+	&__connect{
+		font-size: 0.875rem;
+		line-height: 1rem;
+		padding: 0.44rem 1rem;
+	}
+	&__small-img{
+		width: 92px;
+		height: 92px;
+	}
+}
+
+.side-bar {
+	
+	margin-left: auto;
+	height: 100vh;
+	width: 350px;
+	right: 0;
+	z-index: 1040;
+	&__city {
+		cursor: pointer;
+	}
+}
+
+.side-bar__sticky {
+	top: 40px;
+	position: sticky;
+}
+
+.minus-height {
+	margin-top: -99vh;
+}
+
+.buy-btn {
+	width: 240px;
+	height: 50px;
+	font-size: 1.15rem;
+	font-weight: 700;
+}

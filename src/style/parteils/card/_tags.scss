@@ -1,0 +1,32 @@
+
+.tag, .tag-char {
+	display: inline-block;
+	border: 1px solid $secondary-4;
+	color: $secondary-4;
+	padding: 2px 12px;
+	border-radius: 3px;
+	margin-bottom: 12px;
+	margin-right: 8px;
+	cursor: pointer;
+	&:hover {
+		color: $secondary-1;
+		border: 1px solid $secondary-1;
+	}
+	&-active {
+		color: $secondary-1;
+		border: 1px solid $secondary-1;
+	}
+}
+
+.tag-char{
+	&:hover {
+		border-color: $warning;
+	}
+}
+
+
+.tags {
+	&__tag {
+
+	}
+}
